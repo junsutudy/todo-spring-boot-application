@@ -3,8 +3,8 @@ POST localhost:8080/api/todos
 Content-Type: application/json
 
 {
-  "title": "숙제",
-  "description": "수학 숙제를 해야한다"
+  "title": "안드로이드",
+  "description": "최고"
 }
 
 
@@ -17,11 +17,11 @@ PUT localhost:8080/api/todos/1
 Content-Type: application/json
 
 {
-  "title": "숙제",
-  "description": "숙제 끝났다!!",
+  "title": "Spring Boot",
+  "description": "Good",
   "done": true
 }
 
 
 ### DELETE Delete Todo
-DELETE localhost:8080/api/todos/3
+DELETE localhost:8080/api/todos/5

@@ -1,4 +1,4 @@
-### POST Todo 생성
+### POST Create Todo
 POST localhost:8080/api/todos
 Content-Type: application/json
 
@@ -8,11 +8,11 @@ Content-Type: application/json
 }
 
 
-### GET Todo List 조회
+### GET Inquire Todo List
 GET localhost:8080/api/todos
 
 
-### PUT Todo 수정
+### PUT Edit Todo
 PUT localhost:8080/api/todos/1
 Content-Type: application/json
 
@@ -23,5 +23,5 @@ Content-Type: application/json
 }
 
 
-### DELETE Todo 삭제
+### DELETE Delete Todo
 DELETE localhost:8080/api/todos/3

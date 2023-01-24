@@ -3,6 +3,7 @@ package app.junsu.todoapplication.todo.service
 import app.junsu.todoapplication.todo.api.model.TodoRequest
 import app.junsu.todoapplication.todo.domain.Todo
 import app.junsu.todoapplication.todo.domain.TodoRepository
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.Sort.Direction
 import org.springframework.data.domain.Sort.by
 import org.springframework.data.repository.findByIdOrNull
@@ -14,7 +15,7 @@ import java.time.LocalDateTime
 
 @Service
 class TodoService(
-    private val todoRepository: TodoRepository,
+    @Autowired private val todoRepository: TodoRepository,
 ) {
     @Transactional(readOnly = true)
     fun findAll(): List<Todo> = todoRepository.findAll(
